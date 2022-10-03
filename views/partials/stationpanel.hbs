@@ -1,0 +1,41 @@
+<div class="ui inverted segment">
+  <div class="ui grid">
+    <div class="five column row">
+      <div class="grid column">
+        <i class="huge purple map marker icon"></i>
+        <h3>{{station.name}}</h3>
+        <p>Lat: {{station.latitude}}</p>
+        <p>Lng: {{station.longitude}}</p>
+      </div>
+      <div class="column">
+        <i class="huge red {{station.icon}} icon"></i>
+        <h3>Weather</h3>
+        <p>{{station.weather}}</p>
+      </div>
+      <div class="column">
+        <i class="huge blue temperature low icon"></i>
+        <h3>Temperature</h3>
+        <p>{{station.temperature}}C</p>
+        <p>{{station.tempF}}F</p>
+        <p>Max: {{stationSummary.minTemp.temperature}}</p>
+        <p>Min: {{stationSummary.maxTemp.temperature}}</p>
+      </div>
+      <div class="column">
+        <i class="huge green wind icon"></i>
+        <h3>Wind</h3>
+        <p>{{station.wind}}bft</p>
+        <p>{{station.windCompass}}</p>
+        <p>Feels like: {{station.windChill}}</p>
+        <p>Max: {{stationSummary.minWindSpeed.windSpeed}}</p>
+        <p>Min: {{stationSummary.maxWindSpeed.windSpeed}}</p>
+      </div>
+      <div class="column">
+        <i class="huge orange centos icon"></i>
+        <h3>Pressure</h3>
+        <p>{{station.pressure}}hpa</p>
+        <p>Max: {{stationSummary.minPressure.pressure}}</p>
+        <p>Min: {{stationSummary.maxPressure.pressure}}</p>
+      </div>
+    </div>
+  </div>
+</div>
